@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="giatrivao"></td>
+        <td><select id="sl1">
+            <option value="a">Việt Nam</option>
+            <option value="b">Đô là mỹ</option>
+        </select>
+        </td>
+        <td>
+            <select id="sl2">
+            <option value="b">USD</option>
+            <option value="a">VNĐ</option>
+        </select></td>
+        <td>
+            <button type="button" onclick="ketqua()" >convert</button>
+        </td>
+    </tr>
+</table>
+<br>
+<script>
+        function ketqua() {
+            let giatri = document.getElementById('giatrivao').value;
+            let select1 = document.getElementById('sl1').value;
+            let select2 = document.getElementById('sl2').value;
+            if (select1 == select2) {
+                alert(giatri);
+            }
+            { if (select1 == 'a' && select2 == "b"){alert(giatri*23000)}
+            else {alert(giatri/23000)}}
+        }
+</script>
+</body>
+</html>
