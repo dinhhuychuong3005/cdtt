@@ -11,10 +11,30 @@
 </script>
 </head>
 <body>
-</form>
-<input type="checkbox" onclick="ad;" id ='c'> value="Tôi đồng ý">Tôi đồng ý
+<input type="number" id="a">
+<input type="number" id="b">
 <br>
-<BUTTON type="button" value="Gửi" disabled id='b'> Gửi
-</form>
+<button onclick="cong()">Addition(+)</button>
+<button onclick="tru()">Subtraction(-)</button>
+<button onclick="nhan()">Multiplication(*)</button>
+<button onclick="chia()">Division(/)</button>
+<script>
+    function cong(){let z = + document.getElementById('a').value;
+        let y = + document.getElementById('b').value;
+        document.write(z+y);
+    }
+    function tru(){let z = + document.getElementById('a').value;
+        let y = + document.getElementById('b').value;
+        alert(z-y);
+    }
+    function nhan(){let z = + document.getElementById('a').value;
+        let y = + document.getElementById('b').value;
+        alert(z*y);
+    }
+    function chia(){let z = + document.getElementById('a').value;
+        let y = + document.getElementById('b').value;
+        alert(z/y);
+    }
+</script>
 </body>
 </html>
